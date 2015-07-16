@@ -10,21 +10,16 @@ var SongQueue = Songs.extend({
       this.remove(this.at(0));
     });
 
+    // this.on('enqueue', function(song){
+    //   console.log("hey")
+    // });
 
-    this.on('play', function(){
-      this.playFirst();
-    });
   },
 
 
   playFirst: function() {
-  console.log(this);
-    
-    if(this.at(0)) {
       // console.log(this.at(0));
-      this.set('currentSong', this.at(0))
-    }
-    
+      this.at(0).play();
   }
 
 });
