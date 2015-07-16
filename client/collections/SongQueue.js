@@ -10,19 +10,26 @@ var SongQueue = Songs.extend({
       this.remove(this.at(0));
     });
 
-
-    this.on('play', function(){
-      this.playFirst();
+    this.on('enqueue', function() {
+      console.log(this.length); 
+      if(this.length === 1) {
+        this.playFirst();
+      }
     });
+
+   
+
+    // this.on('play', function(){
+    //   this.playFirst();
+    // });
   },
 
 
   playFirst: function() {
-  console.log(this);
     
     if(this.at(0)) {
-      // console.log(this.at(0));
-      this.set('currentSong', this.at(0))
+      this.at(0).play();
+      // this.set('currentSong', this.at(0));
     }
     
   }
