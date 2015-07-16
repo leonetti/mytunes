@@ -84,12 +84,15 @@ tr {
 }
 
 th {
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Georgia',sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: left;
   padding-left: 20px;
+  background-color: #A6FFC9;
+  width: 380px;
+  text-align: center;
 }
 
 div {
