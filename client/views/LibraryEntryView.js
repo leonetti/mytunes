@@ -7,7 +7,13 @@ var LibraryEntryView = Backbone.View.extend({
 
   events: {
     'click': function() {
+<<<<<<< HEAD
+=======
+      // don't want to use this, because enqueue should automatically do this.
+      // this.model.play();
+>>>>>>> c0bbec45d00cacc54a8f4cc996475b3c6266aa11
       this.model.enqueue();
+      
     }
   },
 
