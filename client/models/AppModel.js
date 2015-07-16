@@ -16,6 +16,7 @@ var AppModel = Backbone.Model.extend({
     //   this.get('songQueue').playFirst();
     // }, this);
 
+
     params.library.on('play', function(song){
       this.set('currentSong', song);
     }, this);
